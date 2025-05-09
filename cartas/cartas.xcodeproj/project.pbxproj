@@ -11,6 +11,8 @@
 		FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B0B2DCE5EBA004EF053 /* ContentView.swift */; };
 		FB534B0E2DCE5EBB004EF053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB534B0D2DCE5EBB004EF053 /* Assets.xcassets */; };
 		FB534B112DCE5EBB004EF053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */; };
+		FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B192DCE6386004EF053 /* cartas_api.swift */; };
+		FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FB534B0B2DCE5EBA004EF053 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB534B0D2DCE5EBB004EF053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB534B192DCE6386004EF053 /* cartas_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartas_api.swift; sourceTree = "<group>"; };
+		FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazo_Completo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		FB534B082DCE5EBA004EF053 /* cartas */ = {
 			isa = PBXGroup;
 			children = (
+				FB534B1B2DCE655F004EF053 /* Modelos */,
 				FB534B172DCE6276004EF053 /* servicios_api */,
 				FB534B092DCE5EBA004EF053 /* cartasApp.swift */,
 				FB534B0B2DCE5EBA004EF053 /* ContentView.swift */,
@@ -71,8 +76,17 @@
 		FB534B172DCE6276004EF053 /* servicios_api */ = {
 			isa = PBXGroup;
 			children = (
+				FB534B192DCE6386004EF053 /* cartas_api.swift */,
 			);
 			path = servicios_api;
+			sourceTree = "<group>";
+		};
+		FB534B1B2DCE655F004EF053 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */,
+				FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */,
 				FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */,
+				FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
