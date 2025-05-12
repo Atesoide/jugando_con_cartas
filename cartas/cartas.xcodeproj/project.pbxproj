@@ -13,6 +13,8 @@
 		FB534B112DCE5EBB004EF053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */; };
 		FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B192DCE6386004EF053 /* cartas_api.swift */; };
 		FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */; };
+		FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8802E2DD2558900DD81C8 /* Errores.swift */; };
+		FBF880322DD2587000DD81C8 /* Controlador_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF880312DD2587000DD81C8 /* Controlador_App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB534B192DCE6386004EF053 /* cartas_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartas_api.swift; sourceTree = "<group>"; };
 		FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazo_Completo.swift; sourceTree = "<group>"; };
+		FBF8802E2DD2558900DD81C8 /* Errores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errores.swift; sourceTree = "<group>"; };
+		FBF880312DD2587000DD81C8 /* Controlador_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador_App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		FB534B082DCE5EBA004EF053 /* cartas */ = {
 			isa = PBXGroup;
 			children = (
+				FBF880302DD2585800DD81C8 /* Controladores */,
 				FB534B1B2DCE655F004EF053 /* Modelos */,
 				FB534B172DCE6276004EF053 /* servicios_api */,
 				FB534B092DCE5EBA004EF053 /* cartasApp.swift */,
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				FB534B192DCE6386004EF053 /* cartas_api.swift */,
+				FBF8802E2DD2558900DD81C8 /* Errores.swift */,
 			);
 			path = servicios_api;
 			sourceTree = "<group>";
@@ -87,6 +93,14 @@
 				FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */,
 			);
 			path = Modelos;
+			sourceTree = "<group>";
+		};
+		FBF880302DD2585800DD81C8 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				FBF880312DD2587000DD81C8 /* Controlador_App.swift */,
+			);
+			path = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +176,9 @@
 				FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */,
 				FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */,
 				FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */,
+				FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */,
 				FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */,
+				FBF880322DD2587000DD81C8 /* Controlador_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

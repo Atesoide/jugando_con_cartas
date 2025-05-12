@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(ControladorAplicacion.self) var controlador
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Tu mazo tiene \(controlador.mazoDePrueba?.remaining) cartas")
         }
         .padding()
     }
@@ -21,4 +22,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ControladorAplicacion())
 }
