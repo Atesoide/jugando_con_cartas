@@ -13,14 +13,19 @@ import SwiftUI
 public class ControladorAplicacion{
     var mazoDePrueba: MazoCompleto? = nil
     
+    var todosMisMazos: [MazoCompleto?] = []
+    
     init() {
         Task.detached(priority: .high){
-            await self.generarMacito()
+            await self.generarMacito(cantidadDeMazos: "3")
+            //mazoDePrueba = await generarMacito()
         }
-    }
-    func generarMacito() async{
-        guard let mazo: MazoCompleto = try? await CartasAPI().generarMazo(cantidadMazos: "1") else{return}
         
+    }
+    func generarMacito(cantidadDeMazos:String) async{
+        guard let mazo: MazoCompleto = try? await CartasAPI().generarMazo(cantidadMazos: "\(cantidadDeMazos)") else{ return }
+        
+        self.todosMisMazos.append(mazo)
         self.mazoDePrueba = mazo
     }
 }

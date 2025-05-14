@@ -9,7 +9,6 @@ import SwiftUI
 
 class CartasAPI: Codable{
     let urlBase = "https://deckofcardsapi.com/api/deck"
-    //let mazoDePrueba = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
     
     func generarMazo(cantidadMazos: String) async -> MazoCompleto?{
         let accion = "/new/shuffle/?deck_count=\(cantidadMazos)"
