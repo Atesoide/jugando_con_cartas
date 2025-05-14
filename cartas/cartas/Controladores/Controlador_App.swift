@@ -17,7 +17,7 @@ public class ControladorAplicacion{
     
     init() {
         Task.detached(priority: .high){
-            await self.generarMacito(cantidadDeMazos: "3")
+            await self.generarMacito(cantidadDeMazos: "1")
             //mazoDePrueba = await generarMacito()
         }
         
@@ -27,6 +27,9 @@ public class ControladorAplicacion{
         
         self.todosMisMazos.append(mazo)
         self.mazoDePrueba = mazo
+    }
+    func funcionDePrueba() {
+        print(":P")
     }
 }
 
