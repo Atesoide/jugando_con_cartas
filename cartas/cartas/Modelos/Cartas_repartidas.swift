@@ -10,7 +10,7 @@ import Foundation
 struct CartasRepartidas: Identifiable, Codable{
     let success: Bool
     let deck_id: String
-    let cards: Array<CartaIndividual>?
+    let cards: Array<CartaIndividual>
     let remaining: Int
     
     let id = UUID()

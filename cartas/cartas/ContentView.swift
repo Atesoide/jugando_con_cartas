@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+let defaul: CartaIndividual = CartaIndividual(code: "6H", image: "", images: nil, value: "6", suit: "SPADES")
 struct ContentView: View {
     @Environment(ControladorAplicacion.self) var controlador
-    
+    @State var cartaDePrueba: CartaIndividual = defaul
     
     var body: some View {
         // var cartas: Int = controlador.mazoDePrueba?.remaining ?? 0
@@ -20,6 +21,8 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             if controlador.todosMisMazos.count != 0{
                 Text("Tu mazo tiene \(controlador.todosMisMazos[0]?.remaining) cartas")
+                Text("carta es\(cartaDePrueba)")
+                Text("Tu mazo tiene \(controlador.todosMisMazos[0]?.remaining) cartas")
                 
                 
             }
@@ -28,8 +31,15 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: {
-            controlador.funcionDePrueba()
+            if controlador.todosMisMazos.count != 0{
+                Task{
+                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "") ?? defaul
+                }
+                
+            }
+            
         })
+        
     }
 }
 

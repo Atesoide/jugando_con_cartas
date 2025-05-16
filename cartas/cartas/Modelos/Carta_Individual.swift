@@ -10,7 +10,7 @@ import Foundation
 struct CartaIndividual: Identifiable, Codable{
     let code: String
     let image: String
-    let images: Fotos
+    let images: Fotos?
     let value: String
     let suit: String
     
