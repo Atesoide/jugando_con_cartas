@@ -19,27 +19,39 @@ public class ControladorAplicacion{
         Task.detached(priority: .high){
             await self.generarMacito(cantidadDeMazos: "1")
             //mazoDePrueba = await generarMacito()
+            
         }
         
     }
     func generarMacito(cantidadDeMazos:String) async{
-        guard let mazo: MazoCompleto = try? await CartasAPI().generarMazo(cantidadMazos: "\(cantidadDeMazos)") else{ return }
+        guard var mazo: MazoCompleto = try? await CartasAPI().generarMazo(cantidadMazos: "\(cantidadDeMazos)") else{ return }
         
         self.todosMisMazos.append(mazo)
         self.mazoDePrueba = mazo
-    }
-    func sacarCarta(idMazo: String) async -> CartaIndividual?{
-        guard let cartaEncapsulada: CartasRepartidas = try? await CartasAPI().sacarCarta(idMazo: idMazo) else{ return nil }
-        guard var cartaExtraida: CartaIndividual = try? await extraerCartaIndividual(cartaSacada: cartaEncapsulada) else {return nil}
-        print(cartaEncapsulada.remaining)
+        func sacarCarta(idMazo: String) async -> CartaIndividual?{
+            print("Controlador: \(idMazo)")
+            guard let cartaEncapsulada: CartasRepartidas = try? await CartasAPI().sacarCarta(idMazo: idMazo) else{ return nil }
+            guard var cartaExtraida: CartaIndividual = try? await extraerCartaIndividual(cartaSacada: cartaEncapsulada) else {return nil}
+            //print(cartaEncapsulada.remaining)
+            
+            return cartaExtraida
+        }
+        func extraerCartaIndividual(cartaSacada: CartasRepartidas) -> CartaIndividual{
+            let cartaExtraida: CartaIndividual = cartaSacada.cards[0]
+            
+            return cartaExtraida
+        }
+        func revolverMazo(idMazo: String) async{
+            var contador: Int = 0
+            for mazo in todosMisMazos{
+                
+                if idMazo == mazo?.deck_id{
+                    todosMisMazos[0] = try? await CartasAPI().reShuffle(idMazo: idMazo)
+                }
+                contador += 1
+            }
+        }
         
-        return cartaExtraida
     }
-    func extraerCartaIndividual(cartaSacada: CartasRepartidas) -> CartaIndividual{
-        let cartaExtraida: CartaIndividual = cartaSacada.cards[0]
-        
-        return cartaExtraida
-    }
-
+    
 }
-
