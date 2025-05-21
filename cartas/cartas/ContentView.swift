@@ -27,12 +27,10 @@ struct ContentView: View {
             }
             Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/){
                 Task{
-                    if controlador.todosMisMazos[0]!.remaining <= 30{
-                        
+                    if await controlador.revisarCantidadDeCartas(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "") <= 10{
                         await controlador.revolverMazo(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "")
-                        print("Hola!")
                     }
-                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "") ?? defaul
+                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "", cantidadCartas: "1") ?? defaul
                     
                 }
                 
@@ -44,7 +42,8 @@ struct ContentView: View {
             if controlador.todosMisMazos.count != 0{
                 Task{
                     
-                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "") ?? defaul
+                    
+                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "", cantidadCartas: "1") ?? defaul
                     await controlador.revolverMazo(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "")
                     
                     

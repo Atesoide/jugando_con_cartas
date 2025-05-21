@@ -15,8 +15,8 @@ class CartasAPI: Codable{
         
         return await descargar(funcion: accion)
     }
-    func sacarCarta(idMazo: String) async -> CartasRepartidas?{
-        let accion = "/\(idMazo)/draw/?count=1"
+    func sacarCarta(idMazo: String, cantidadCartas: String) async -> CartasRepartidas?{
+        let accion = "/\(idMazo)/draw/?count=\(cantidadCartas)"
         
         return await descargar(funcion: accion)
     }
