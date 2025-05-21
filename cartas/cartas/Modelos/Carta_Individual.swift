@@ -39,9 +39,32 @@ struct CartaIndividual: Identifiable, Codable{
         case "5":
             return 5
             
+        case "6":
+            return 6
+            
+        case "7":
+            return 7
+            
+        case "8":
+            return 8
+            
+        case "9":
+            return 9
+            
+        case "10":
+            return 10
+            
+        case "JACK":
+            return 10
+            
+        case "QUEEN":
+            return 10
+            
+        case "KING":
+            return 10
+            
         default:
             return 0
         }
-        return 0
     }
 }

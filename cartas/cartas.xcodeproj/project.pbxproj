@@ -13,6 +13,8 @@
 		FB534B112DCE5EBB004EF053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */; };
 		FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B192DCE6386004EF053 /* cartas_api.swift */; };
 		FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */; };
+		FB6C82202DDE32B30029C430 /* blackjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C821F2DDE32B30029C430 /* blackjack.swift */; };
+		FB6C82232DDE37080029C430 /* jugando.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C82222DDE37080029C430 /* jugando.swift */; };
 		FBA4A0CF2DD4FC5800221F6A /* fotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0CE2DD4FC5800221F6A /* fotos.swift */; };
 		FBA4A0D12DD4FD4F00221F6A /* Carta_Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */; };
 		FBA4A0D32DD4FE7700221F6A /* Cartas_repartidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */; };
@@ -28,6 +30,8 @@
 		FB534B102DCE5EBB004EF053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB534B192DCE6386004EF053 /* cartas_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartas_api.swift; sourceTree = "<group>"; };
 		FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazo_Completo.swift; sourceTree = "<group>"; };
+		FB6C821F2DDE32B30029C430 /* blackjack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blackjack.swift; sourceTree = "<group>"; };
+		FB6C82222DDE37080029C430 /* jugando.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jugando.swift; sourceTree = "<group>"; };
 		FBA4A0CE2DD4FC5800221F6A /* fotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fotos.swift; sourceTree = "<group>"; };
 		FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta_Individual.swift; sourceTree = "<group>"; };
 		FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartas_repartidas.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 		FB534B082DCE5EBA004EF053 /* cartas */ = {
 			isa = PBXGroup;
 			children = (
+				FB6C821E2DDE32A00029C430 /* UI */,
 				FBF880302DD2585800DD81C8 /* Controladores */,
 				FB534B1B2DCE655F004EF053 /* Modelos */,
 				FB534B172DCE6276004EF053 /* servicios_api */,
@@ -96,12 +101,29 @@
 		FB534B1B2DCE655F004EF053 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				FB6C82212DDE36EB0029C430 /* Soportes */,
 				FB534B1D2DCE67A4004EF053 /* Mazo_Completo.swift */,
 				FBA4A0CE2DD4FC5800221F6A /* fotos.swift */,
 				FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */,
 				FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */,
 			);
 			path = Modelos;
+			sourceTree = "<group>";
+		};
+		FB6C821E2DDE32A00029C430 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FB6C821F2DDE32B30029C430 /* blackjack.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FB6C82212DDE36EB0029C430 /* Soportes */ = {
+			isa = PBXGroup;
+			children = (
+				FB6C82222DDE37080029C430 /* jugando.swift */,
+			);
+			path = Soportes;
 			sourceTree = "<group>";
 		};
 		FBF880302DD2585800DD81C8 /* Controladores */ = {
@@ -185,7 +207,9 @@
 				FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */,
 				FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */,
 				FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */,
+				FB6C82232DDE37080029C430 /* jugando.swift in Sources */,
 				FBA4A0CF2DD4FC5800221F6A /* fotos.swift in Sources */,
+				FB6C82202DDE32B30029C430 /* blackjack.swift in Sources */,
 				FBA4A0D12DD4FD4F00221F6A /* Carta_Individual.swift in Sources */,
 				FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */,
 				FBA4A0D32DD4FE7700221F6A /* Cartas_repartidas.swift in Sources */,
