@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3813AA2DE4BF3D00A5C9B5 /* Gambito.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3813A92DE4BF3D00A5C9B5 /* Gambito.swift */; };
+		FB3813AC2DE4D57400A5C9B5 /* Turnos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3813AB2DE4D57400A5C9B5 /* Turnos.swift */; };
 		FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B092DCE5EBA004EF053 /* cartasApp.swift */; };
 		FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB534B0B2DCE5EBA004EF053 /* ContentView.swift */; };
 		FB534B0E2DCE5EBB004EF053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB534B0D2DCE5EBB004EF053 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB3813A92DE4BF3D00A5C9B5 /* Gambito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gambito.swift; sourceTree = "<group>"; };
+		FB3813AB2DE4D57400A5C9B5 /* Turnos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turnos.swift; sourceTree = "<group>"; };
 		FB534B062DCE5EBA004EF053 /* cartas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cartas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB534B092DCE5EBA004EF053 /* cartasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartasApp.swift; sourceTree = "<group>"; };
 		FB534B0B2DCE5EBA004EF053 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				FBA4A0CE2DD4FC5800221F6A /* fotos.swift */,
 				FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */,
 				FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */,
+				FB3813A92DE4BF3D00A5C9B5 /* Gambito.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6C82222DDE37080029C430 /* jugando.swift */,
+				FB3813AB2DE4D57400A5C9B5 /* Turnos.swift */,
 			);
 			path = Soportes;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				FBA4A0CF2DD4FC5800221F6A /* fotos.swift in Sources */,
 				FB6C82202DDE32B30029C430 /* blackjack.swift in Sources */,
 				FBA4A0D12DD4FD4F00221F6A /* Carta_Individual.swift in Sources */,
+				FB3813AA2DE4BF3D00A5C9B5 /* Gambito.swift in Sources */,
+				FB3813AC2DE4D57400A5C9B5 /* Turnos.swift in Sources */,
 				FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */,
 				FBA4A0D32DD4FE7700221F6A /* Cartas_repartidas.swift in Sources */,
 				FB534B1E2DCE67A4004EF053 /* Mazo_Completo.swift in Sources */,

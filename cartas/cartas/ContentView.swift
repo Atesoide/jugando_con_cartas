@@ -14,7 +14,6 @@ struct ContentView: View {
     var body: some View {
         // var cartas: Int = controlador.mazoDePrueba?.remaining ?? 0
         Text(defaul.suit)
-        
     }
 }
 
