@@ -10,5 +10,4 @@ import Foundation
 enum Turnos{
     case turnoJugador
     case turnoDealer
-    case turnosTerminados
 }

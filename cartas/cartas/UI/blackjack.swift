@@ -527,6 +527,7 @@ struct blackjack: View {
                                     empate = false
                                     tamañoCartasD = 100
                                     tamañoCartasJ = 100
+                                    dejaDeApostar = verificarSaldo(saldo: apostador.saldo)
                                 }
                                 .buttonStyle(CasinoResultButtonStyle(win: nil))
                             }
@@ -539,8 +540,7 @@ struct blackjack: View {
                                 .stroke(Color.gold, lineWidth: 3)
                         )
                         
-                    case .turnosTerminados:
-                        Text("Siii")
+                    
                     }
                 }
                 .padding()
