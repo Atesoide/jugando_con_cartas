@@ -25,6 +25,7 @@
 		FBD3B2022DE7544D0011E1CD /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2012DE7544D0011E1CD /* Stats.swift */; };
 		FBD3B2042DE7555F0011E1CD /* Menu_Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2032DE7555F0011E1CD /* Menu_Principal.swift */; };
 		FBD3B2062DE758410011E1CD /* Todo_Junto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2052DE758410011E1CD /* Todo_Junto.swift */; };
+		FBD3B2082DE768470011E1CD /* CasinoColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2072DE768470011E1CD /* CasinoColors.swift */; };
 		FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8802E2DD2558900DD81C8 /* Errores.swift */; };
 		FBF880322DD2587000DD81C8 /* Controlador_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF880312DD2587000DD81C8 /* Controlador_App.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		FBD3B2012DE7544D0011E1CD /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		FBD3B2032DE7555F0011E1CD /* Menu_Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Principal.swift; sourceTree = "<group>"; };
 		FBD3B2052DE758410011E1CD /* Todo_Junto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_Junto.swift; sourceTree = "<group>"; };
+		FBD3B2072DE768470011E1CD /* CasinoColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoColors.swift; sourceTree = "<group>"; };
 		FBF8802E2DD2558900DD81C8 /* Errores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errores.swift; sourceTree = "<group>"; };
 		FBF880312DD2587000DD81C8 /* Controlador_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador_App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 			children = (
 				FB6C82222DDE37080029C430 /* jugando.swift */,
 				FB3813AB2DE4D57400A5C9B5 /* Turnos.swift */,
+				FBD3B2072DE768470011E1CD /* CasinoColors.swift */,
 			);
 			path = Soportes;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB534B0C2DCE5EBA004EF053 /* ContentView.swift in Sources */,
+				FBD3B2082DE768470011E1CD /* CasinoColors.swift in Sources */,
 				FB534B1A2DCE6386004EF053 /* cartas_api.swift in Sources */,
 				FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */,
 				FB6C82232DDE37080029C430 /* jugando.swift in Sources */,

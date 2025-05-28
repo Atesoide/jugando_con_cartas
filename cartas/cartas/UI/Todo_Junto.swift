@@ -7,13 +7,17 @@
 
 import SwiftUI
 
-struct Todo_Junto: View {
+struct TodoJunto: View {
+    
     @Environment(ControladorAplicacion.self) var controlador
     var body: some View {
+        
         TabView{
+            
             blackjack()
                 .tabItem {
                     Label("BlacJack", systemImage: "circle")
+                        
                 }
             Skins()
                 .tabItem {
@@ -32,6 +36,6 @@ struct Todo_Junto: View {
 }
 
 #Preview {
-    Todo_Junto()
+    TodoJunto()
         .environment(ControladorAplicacion())
 }
