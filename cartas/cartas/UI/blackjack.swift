@@ -35,10 +35,12 @@ struct blackjack: View {
     
     
     
+    
     var body: some View {
-        Text("$\(apostador.saldo)")
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
+        
         VStack {
+            Text("$\(apostador.saldo)")
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
             switch estatus {
             case .apostando:
                 Text("Apuesta tus fichas")
@@ -47,6 +49,7 @@ struct blackjack: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                    
                 HStack{ //Botones de apuesta
                     Button("10"){
                         apostador.apostar(cantidad: 10)
@@ -55,6 +58,7 @@ struct blackjack: View {
                         BoteVacio = false
                     }
                     .disabled(dejaDeApostar)
+
                     Button("25"){
                         apostador.apostar(cantidad: 25)
                         bote += 25
@@ -431,11 +435,11 @@ struct blackjack: View {
         }
         .padding()
         .onAppear(perform: {
+            
             if controlador.todosMisMazos.count != 0{
                 Task{
                     
-                    
-                    cartaDePrueba = await controlador.sacarCarta(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "", cantidadCartas: "1") ?? defaul
+                
                     await controlador.revolverMazo(idMazo: controlador.todosMisMazos[0]?.deck_id ?? "")
                     
                     
@@ -444,6 +448,7 @@ struct blackjack: View {
                 
             }
         })
+        
     }
 }
 

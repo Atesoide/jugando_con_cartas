@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
+@MainActor
 struct cartasApp: App {
+    @State var controlador = ControladorAplicacion()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuPrincipal()
+                .environment(controlador)
         }
     }
 }

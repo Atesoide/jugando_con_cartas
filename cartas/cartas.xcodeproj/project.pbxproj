@@ -20,6 +20,11 @@
 		FBA4A0CF2DD4FC5800221F6A /* fotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0CE2DD4FC5800221F6A /* fotos.swift */; };
 		FBA4A0D12DD4FD4F00221F6A /* Carta_Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */; };
 		FBA4A0D32DD4FE7700221F6A /* Cartas_repartidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */; };
+		FBD3B1FA2DE74D3C0011E1CD /* Cajero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B1F92DE74D3C0011E1CD /* Cajero.swift */; };
+		FBD3B1FE2DE7500F0011E1CD /* Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B1FD2DE7500F0011E1CD /* Skins.swift */; };
+		FBD3B2022DE7544D0011E1CD /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2012DE7544D0011E1CD /* Stats.swift */; };
+		FBD3B2042DE7555F0011E1CD /* Menu_Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2032DE7555F0011E1CD /* Menu_Principal.swift */; };
+		FBD3B2062DE758410011E1CD /* Todo_Junto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3B2052DE758410011E1CD /* Todo_Junto.swift */; };
 		FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8802E2DD2558900DD81C8 /* Errores.swift */; };
 		FBF880322DD2587000DD81C8 /* Controlador_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF880312DD2587000DD81C8 /* Controlador_App.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,11 @@
 		FBA4A0CE2DD4FC5800221F6A /* fotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fotos.swift; sourceTree = "<group>"; };
 		FBA4A0D02DD4FD4F00221F6A /* Carta_Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta_Individual.swift; sourceTree = "<group>"; };
 		FBA4A0D22DD4FE7700221F6A /* Cartas_repartidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartas_repartidas.swift; sourceTree = "<group>"; };
+		FBD3B1F92DE74D3C0011E1CD /* Cajero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cajero.swift; sourceTree = "<group>"; };
+		FBD3B1FD2DE7500F0011E1CD /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
+		FBD3B2012DE7544D0011E1CD /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		FBD3B2032DE7555F0011E1CD /* Menu_Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Principal.swift; sourceTree = "<group>"; };
+		FBD3B2052DE758410011E1CD /* Todo_Junto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_Junto.swift; sourceTree = "<group>"; };
 		FBF8802E2DD2558900DD81C8 /* Errores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errores.swift; sourceTree = "<group>"; };
 		FBF880312DD2587000DD81C8 /* Controlador_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador_App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				FB6C821F2DDE32B30029C430 /* blackjack.swift */,
+				FBD3B1F92DE74D3C0011E1CD /* Cajero.swift */,
+				FBD3B1FD2DE7500F0011E1CD /* Skins.swift */,
+				FBD3B2012DE7544D0011E1CD /* Stats.swift */,
+				FBD3B2032DE7555F0011E1CD /* Menu_Principal.swift */,
+				FBD3B2052DE758410011E1CD /* Todo_Junto.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -215,8 +230,13 @@
 				FB534B0A2DCE5EBA004EF053 /* cartasApp.swift in Sources */,
 				FB6C82232DDE37080029C430 /* jugando.swift in Sources */,
 				FBA4A0CF2DD4FC5800221F6A /* fotos.swift in Sources */,
+				FBD3B2042DE7555F0011E1CD /* Menu_Principal.swift in Sources */,
+				FBD3B2022DE7544D0011E1CD /* Stats.swift in Sources */,
+				FBD3B1FA2DE74D3C0011E1CD /* Cajero.swift in Sources */,
 				FB6C82202DDE32B30029C430 /* blackjack.swift in Sources */,
 				FBA4A0D12DD4FD4F00221F6A /* Carta_Individual.swift in Sources */,
+				FBD3B2062DE758410011E1CD /* Todo_Junto.swift in Sources */,
+				FBD3B1FE2DE7500F0011E1CD /* Skins.swift in Sources */,
 				FB3813AA2DE4BF3D00A5C9B5 /* Gambito.swift in Sources */,
 				FB3813AC2DE4D57400A5C9B5 /* Turnos.swift in Sources */,
 				FBF8802F2DD2558900DD81C8 /* Errores.swift in Sources */,
